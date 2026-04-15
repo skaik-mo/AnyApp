@@ -6,15 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E77EAC182F8EAB9500E79D33 /* Gemfile in Resources */ = {isa = PBXBuildFile; fileRef = E77EAC172F8EAB9200E79D33 /* Gemfile */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		E7F17ECA2F8D38A500F59F2E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E7F17EB42F8D38A300F59F2E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E7F17EBB2F8D38A300F59F2E;
-			remoteInfo = AnyApp;
-		};
-		E7F17ED42F8D38A500F59F2E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = E7F17EB42F8D38A300F59F2E /* Project object */;
 			proxyType = 1;
@@ -24,9 +21,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E77EAC172F8EAB9200E79D33 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		E7C0E4062F8ED279003676BA /* AnyApp.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AnyApp.xctestplan; sourceTree = "<group>"; };
 		E7F17EBC2F8D38A300F59F2E /* AnyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F17EC92F8D38A500F59F2E /* AnyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7F17ED32F8D38A500F59F2E /* AnyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -38,11 +36,6 @@
 		E7F17ECC2F8D38A500F59F2E /* AnyAppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AnyAppTests;
-			sourceTree = "<group>";
-		};
-		E7F17ED62F8D38A500F59F2E /* AnyAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AnyAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -62,22 +55,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7F17ED02F8D38A500F59F2E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E7F17EB32F8D38A300F59F2E = {
 			isa = PBXGroup;
 			children = (
+				E7C0E4062F8ED279003676BA /* AnyApp.xctestplan */,
+				E77EAC172F8EAB9200E79D33 /* Gemfile */,
 				E7F17EBE2F8D38A300F59F2E /* AnyApp */,
 				E7F17ECC2F8D38A500F59F2E /* AnyAppTests */,
-				E7F17ED62F8D38A500F59F2E /* AnyAppUITests */,
 				E7F17EBD2F8D38A300F59F2E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,7 +74,6 @@
 			children = (
 				E7F17EBC2F8D38A300F59F2E /* AnyApp.app */,
 				E7F17EC92F8D38A500F59F2E /* AnyAppTests.xctest */,
-				E7F17ED32F8D38A500F59F2E /* AnyAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,29 +126,6 @@
 			productReference = E7F17EC92F8D38A500F59F2E /* AnyAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E7F17ED22F8D38A500F59F2E /* AnyAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E7F17EE32F8D38A500F59F2E /* Build configuration list for PBXNativeTarget "AnyAppUITests" */;
-			buildPhases = (
-				E7F17ECF2F8D38A500F59F2E /* Sources */,
-				E7F17ED02F8D38A500F59F2E /* Frameworks */,
-				E7F17ED12F8D38A500F59F2E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E7F17ED52F8D38A500F59F2E /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				E7F17ED62F8D38A500F59F2E /* AnyAppUITests */,
-			);
-			name = AnyAppUITests;
-			packageProductDependencies = (
-			);
-			productName = AnyAppUITests;
-			productReference = E7F17ED32F8D38A500F59F2E /* AnyAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -177,10 +140,6 @@
 						CreatedOnToolsVersion = 26.4;
 					};
 					E7F17EC82F8D38A500F59F2E = {
-						CreatedOnToolsVersion = 26.4;
-						TestTargetID = E7F17EBB2F8D38A300F59F2E;
-					};
-					E7F17ED22F8D38A500F59F2E = {
 						CreatedOnToolsVersion = 26.4;
 						TestTargetID = E7F17EBB2F8D38A300F59F2E;
 					};
@@ -202,7 +161,6 @@
 			targets = (
 				E7F17EBB2F8D38A300F59F2E /* AnyApp */,
 				E7F17EC82F8D38A500F59F2E /* AnyAppTests */,
-				E7F17ED22F8D38A500F59F2E /* AnyAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -212,17 +170,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77EAC182F8EAB9500E79D33 /* Gemfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		E7F17EC72F8D38A500F59F2E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E7F17ED12F8D38A500F59F2E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -246,13 +198,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E7F17ECF2F8D38A500F59F2E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,11 +205,6 @@
 			isa = PBXTargetDependency;
 			target = E7F17EBB2F8D38A300F59F2E /* AnyApp */;
 			targetProxy = E7F17ECA2F8D38A500F59F2E /* PBXContainerItemProxy */;
-		};
-		E7F17ED52F8D38A500F59F2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = E7F17EBB2F8D38A300F59F2E /* AnyApp */;
-			targetProxy = E7F17ED42F8D38A500F59F2E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -321,7 +261,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -378,7 +318,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -402,6 +342,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -433,6 +374,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -457,7 +399,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "skaik-mo.AnyAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -478,7 +420,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "skaik-mo.AnyAppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -489,44 +431,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnyApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AnyApp";
-			};
-			name = Release;
-		};
-		E7F17EE42F8D38A500F59F2E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "skaik-mo.AnyAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AnyApp;
-			};
-			name = Debug;
-		};
-		E7F17EE52F8D38A500F59F2E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "skaik-mo.AnyAppUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRING_CATALOG_GENERATE_SYMBOLS = NO;
-				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = AnyApp;
 			};
 			name = Release;
 		};
@@ -556,15 +460,6 @@
 			buildConfigurations = (
 				E7F17EE12F8D38A500F59F2E /* Debug */,
 				E7F17EE22F8D38A500F59F2E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E7F17EE32F8D38A500F59F2E /* Build configuration list for PBXNativeTarget "AnyAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E7F17EE42F8D38A500F59F2E /* Debug */,
-				E7F17EE52F8D38A500F59F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

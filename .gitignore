@@ -1,0 +1,26 @@
+# macOS
+#
+.DS_Store
+
+# Xcode
+# Ignore the local Build folder from the screenshot
+Build/
+
+# Ignore the Derived Data and other temporary build artifacts
+DerivedData/
+*.xcuserstate
+*.xcresult
+
+# Ignore user-specific settings (prevents 'xcuserstate' noise)
+**/xcuserdata/
+**/project.xcworkspace/
+**/UserInterfaceState.xcuserstate
+
+# Fastlane
+#
+Fastlane/report.xml
+Fastlane/test_output
+
+# --- Ruby / Bundler ---
+.bundle/
+vendor/bundle/

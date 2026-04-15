@@ -11,7 +11,7 @@ import XCTest
 final class AnyAppTests: XCTestCase {
 
     func testExampleSuccess() throws {
-        XCTAssertTrue(false, "This test demonstrates a passing assertion.")
+        XCTAssertTrue(true, "This test demonstrates a passing assertion.")
     }
 
     func testExample() throws {
